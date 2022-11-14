@@ -1,0 +1,25 @@
+{
+  "name": "shaw-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node build/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moises-Bruce/shaw-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moises-Bruce/shaw-backend/issues"
+  },
+  "homepage": "https://github.com/Moises-Bruce/shaw-backend#readme",
+  "devDependencies": {
+    "tsx": "^3.12.1",
+    "typescript": "^4.8.4"
+  }
+}
