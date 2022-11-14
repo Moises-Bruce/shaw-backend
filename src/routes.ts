@@ -37,7 +37,7 @@ export async function routes(fastify: FastifyInstance) {
         const response = await github.get(urlToRequest);
         const users: IUser[] = response.data;
 
-        const nextPage = request.hostname + `/users?since=${users[users.length - 1].id}`;
+        const nextPage = request.protocol + '://' + request.hostname + `/users?since=${users[users.length - 1].id}`;
 
         return { users, nextPage }
     })
