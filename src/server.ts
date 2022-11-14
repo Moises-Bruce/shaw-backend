@@ -13,9 +13,9 @@ async function bootstrap() {
 
     await fastify.register(routes);
 
-    await fastify.listen({
-        port: 3333
-    });
+    const port = process.env.PORT || 3333
+
+    await fastify.listen({ port: Number(port) });
 }
 
 bootstrap();
