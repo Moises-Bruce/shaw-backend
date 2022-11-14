@@ -5,7 +5,9 @@
   "main": "build/server.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "start": "tsc && node build/server.js"
+    "start": "node build/server.js",
+    "tsc": "tsc",
+    "postinstall": "npm run tsc"
   },
   "repository": {
     "type": "git",
